@@ -76,6 +76,11 @@
 {% set product_lockwise = 'Lockwise' %}
 {% set product_pocket = 'Pocket' %}
 
+{% if LANG.startswith('en') %}
+  {% set browsers_url = url('firefox.browsers.index') %}
+{% else %}
+  {% set browsers_url = url('firefox.new') %}
+{% endif %}
 
 {% block content %}
 <main role="main" class="firefox-home">
@@ -91,7 +96,7 @@
         <h2 class="c-showcase-title">{{ family_title }}</h2>
         <ul class="c-showcase-list">
           <li>
-            <a class="mzp-c-cta-link" href="{{ url('firefox.new') }}" data-cta-type="link" data-cta-text="Browsers">
+            <a class="mzp-c-cta-link" href="{{ browsers_url }}" data-cta-type="link" data-cta-text="Browsers">
               <img alt="" src="{{ static('protocol/img/logos/firefox/browser/logo-md.png') }}" height="40" width="40"><br>
               {{ product_browsers }}
             </a>
@@ -248,7 +253,7 @@
         <div class="c-showcase t-small">
             <ul class="c-showcase-list">
               <li>
-                <a class="mzp-c-cta-link" href="{{ url('firefox.new') }}" data-cta-type="link" data-cta-text="Browsers">
+                <a class="mzp-c-cta-link" href="{{ browsers_url }}" data-cta-type="link" data-cta-text="Browsers">
                   <img alt="" src="{{ static('protocol/img/logos/firefox/browser/logo-md.png') }}" height="40" width="40"><br>
                   {{ product_browsers }}
                 </a>

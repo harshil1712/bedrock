@@ -643,6 +643,13 @@
     },
     {
       "files": [
+        "css/firefox/landing-grid.scss",
+        "css/base/mozilla-lazy-image.scss"
+      ],
+      "name": "firefox-landing-grid"
+    },
+    {
+      "files": [
         "css/mozorg/book.scss"
       ],
       "name": "book"
@@ -1233,6 +1240,18 @@
         "js/firefox/home/master.js"
       ],
       "name": "firefox-master"
+    },
+    {
+      "files": [
+        "js/base/mozilla-fxa.js",
+        "js/base/mozilla-fxa-init.js",
+        "js/base/mozilla-fxa-form.js",
+        "js/base/mozilla-fxa-form-init.js",
+        "js/base/mozilla-fxa-sign-in-link.js",
+        "js/base/uitour-lib.js",
+        "js/firefox/landing-grid.js"
+      ],
+      "name": "firefox-landing-grid"
     },
     {
       "files": [

@@ -240,6 +240,7 @@ $image-path: '/media/protocol/img';
         }
     }
 
+    // https://github.com/mozilla/protocol/issues/511
     .mzp-c-card-feature-title {
         strong {
             @include zap('/media/protocol/img/zaps/zap-08.svg');
@@ -313,6 +314,7 @@ $image-path: '/media/protocol/img';
     margin-bottom: $spacing-2xl;
     margin-top: $layout-md;
 
+    // https://github.com/mozilla/protocol/issues/511
     strong {
         @include zap('/media/protocol/img/zaps/zap-08.svg');
     }

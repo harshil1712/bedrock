@@ -1458,7 +1458,8 @@
         "js/base/core-datalayer.js",
         "js/base/core-datalayer-init.js",
         "js/base/search-params.js",
-        "js/base/mozilla-fxa-sign-in-link.js",
+        "js/base/mozilla-fxa-link.js",
+        "js/base/mozilla-fxa-link-init.js",
         "js/base/fxa-utm-referral.js",
         "js/base/fxa-utm-referral-init.js"
       ],
@@ -1484,7 +1485,8 @@
         "js/base/core-datalayer.js",
         "js/base/core-datalayer-init.js",
         "js/base/search-params.js",
-        "js/base/mozilla-fxa-sign-in-link.js",
+        "js/base/mozilla-fxa-link.js",
+        "js/base/mozilla-fxa-link-init.js",
         "js/base/fxa-utm-referral.js",
         "js/base/fxa-utm-referral-init.js"
       ],
@@ -1509,7 +1511,8 @@
         "js/base/core-datalayer.js",
         "js/base/core-datalayer-init.js",
         "js/base/search-params.js",
-        "js/base/mozilla-fxa-sign-in-link.js",
+        "js/base/mozilla-fxa-link.js",
+        "js/base/mozilla-fxa-link-init.js",
         "js/base/fxa-utm-referral.js",
         "js/base/fxa-utm-referral-init.js"
       ],

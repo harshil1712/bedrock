@@ -133,6 +133,7 @@ urlpatterns = (
     page('firefox/browsers/compare', 'firefox/compare/index.html'),
     page('firefox/browsers/compare/chrome', 'firefox/compare/chrome.html'),
     page('firefox/browsers/compare/ie', 'firefox/compare/ie.html'),
+    page('firefox/browsers/compare/edge', 'firefox/compare/edge.html'),
 
     # Lockwise
     page('firefox/lockwise', 'firefox/lockwise/lockwise.html'),

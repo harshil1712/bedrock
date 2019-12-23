@@ -95,17 +95,17 @@
 
       <p class="compare-content">
         {% trans %}
-        However, the Edge saves some of your private data and it is reported back to Microsoft with Windows updates. At 45 cryptically worded pages long, the privacy policy for Edge is unlikely to be read or understood by the average user.
+        However, Edge saves some of your private data and it is reported back to Microsoft with Windows updates. At 45 cryptically worded pages long, the privacy policy for Edge is unlikely to be read or understood by the average user.
+        {% endtrans %}
+      </p>
+
+      <p class="compare-content">
+        {% trans attrs='href="%s" data-cta-type="link" data-cta-name="privacy policy"'|safe|format(url('privacy.notices.firefox')) %}
+        At Firefox our <a {{ attrs }}>privacy policy</a> is transparent. We actually put a lot of work into making sure it was straightforward and easy to read. We pride ourselves in protecting our users security and privacy. With Enhanced Tracking Protection now on by default, we block 2000+ trackers automatically. Trackers are those little pieces of code that try to piece together what you're doing across multiple internet sites to build a composite and detailed picture of who you are.
         {% endtrans %}
       </p>
 
       <img src="{{ static('img/firefox/compare/compare-privacy-eyes.svg') }}" alt="" height="217" width="320" class="compare-details-image">
-
-      <p class="compare-content">
-        {% trans attrs = 'href="%s" data-cta-type="link" data-cta-name="privacy policy"'|safe|format(url('privacy.notices.firefox')) %}
-        At Firefox our <a {{ attrs }}>privacy policy</a> is transparent. We actually put a lot of work into making sure it was straightforward and easy to read. We pride ourselves in protecting our users security and privacy. With Enhanced Tracking Protection now on by default, we block 2000+ trackers automatically. Trackers are those little pieces of code that try to piece together what you’re doing across multiple internet sites to build a composite and detailed picture of who you are.
-        {% endtrans %}
-      </p>
 
       <p class="compare-content">
         {% trans attrs='href="https://support.mozilla.org/kb/enhanced-tracking-protection-firefox-desktop#w_how-to-tell-when-firefox-is-protecting-you" rel="external noopener" data-cta-text="Privacy Protections" data-cta-type="link"'|safe %}
@@ -197,13 +197,13 @@
 
       <p class="compare-content">
         {% trans %}
-        Firefox is a fast, an open source browser, which means users can customize their browsing experience in every way possible. Firefox also allows the casual user several different ways to customize the UI with applying different themes and toolbar configurations. Since our browser has always been open source we have a large following of devoted developers who have created an extensive library of add-ons and browser extensions.
+        Firefox is a fast and open source browser, which means users can customize their browsing experience in every way possible. Firefox also allows the casual user several different ways to customize the UI with applying different themes and toolbar configurations. Since our browser has always been open source we have a large following of devoted developers who have created an extensive library of add-ons and browser extensions.
         {% endtrans %}
       </p>
 
       <p class="compare-content">
         {% trans %}
-        Since Edge has moved to the processor intensive Chromium platform, you can expect it to run a little slower, especially if you have multiple programs running at once. However, with Chromium platform comes a massive library of extensions as well as a decent level of UI customization.
+        Since Edge has moved to the processor-intensive Chromium platform, you can expect it to run a little slower, especially if you have multiple programs running at once. However, with Chromium platform comes a massive library of extensions as well as a decent level of UI customization.
         {% endtrans %}
       </p>
 
@@ -289,13 +289,14 @@
       </p>
 
       <p class="compare-content">
-        {% trans %}
-        Firefox has been available on iOS, Android, Windows, macOS, and Linux for years. And as you would expect with any modern browser, Firefox lets you log in with a free account and sync data such as passwords, browsing history, bookmarks, and open tabs between your computer, tablet. and phone. It also allows you to sync across platforms as well.
+        {% trans attrs='href="%s" data-cta-type="link" data-cta-name="free account"'|safe|format(url('firefox.accounts')) %}
+        Firefox has been available on iOS, Android, Windows, macOS, and Linux for years. And as you would expect with any modern browser, Firefox lets you log in with a <a {{ attrs }}>free account</a> and sync data such as passwords, browsing history, bookmarks, and open tabs between your computer, tablet. and phone. It also allows you to sync across platforms as well.
         {% endtrans %}
       </p>
 
       <p class="compare-content">
-        {% trans android='href="https://play.google.com/store/apps/details?id=org.mozilla.focus&amp;hl" rel="external noopener" data-cta-text="Android" data-cta-type="link"'|safe, ios='href="https://apps.apple.com/app/firefox-focus-privacy-browser/id1055677337" rel="external noopener" data-cta-text="iOS" data-cta-type="link"'|safe %}
+        {% trans android='href="https://play.google.com/store/apps/details?id=org.mozilla.focus&amp;hl" rel="external noopener" data-cta-text="Android" data-cta-type="link"'|safe,
+                 ios='href="https://apps.apple.com/app/firefox-focus-privacy-browser/id1055677337" rel="external noopener" data-cta-text="iOS" data-cta-type="link"'|safe %}
         We also offer a version of our Firefox mobile browser called Firefox Focus for <a {{ android }}>Android</a> and <a {{ ios }}>iOS</a>. Take private browsing to the next level. Firefox Focus gives you a dedicated privacy browser with tracking protection and content blocking.
         {% endtrans %}
       </p>
@@ -305,13 +306,6 @@
         Edge also allows you to connect your associated Microsoft account and sign in to sync your favorites, history, passwords, and more between your computer and iOS or Android devices, although some Android tablets are not currently supported.
         {% endtrans %}
       </p>
-
-      <p class="compare-content">
-        {% trans %}
-        The mobile version of Edge also includes InPrivate browsing, ad blocking through AdBlock Plus, searching by voice and by QR code, and finding text on a page.
-        {% endtrans %}
-      </p>
-
     </section>
 
     <section class="compare-section-overall">

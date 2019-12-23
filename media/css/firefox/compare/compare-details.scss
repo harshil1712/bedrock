@@ -46,16 +46,6 @@ $image-path: "/media/protocol/img";
     margin: 0 auto $layout-md;
     max-width: 300px;
     position: relative;
-    @media #{$mq-md} {
-        max-width: 350px;
-        &::before {
-            height: 120px;
-        }
-        img {
-            height: 92px;
-            width: 92px;
-        }
-    }
     img {
         animation: compare-details-hero-image-float 5s ease-in-out infinite;
         height: 76px;
@@ -75,6 +65,16 @@ $image-path: "/media/protocol/img";
         order: 2;
         top: 0;
         width: 10px;
+    }
+    @media #{$mq-md} {
+        max-width: 350px;
+        &::before {
+            height: 120px;
+        }
+        img {
+            height: 92px;
+            width: 92px;
+        }
     }
 }
 
